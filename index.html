@@ -16,7 +16,8 @@
             extend: {
               colors: {
                 primary: '#ffffff',
-                secondary: '#F4F7FF'
+                secondary: '#F4F7FF',
+                accent: '#3752FD'
               }
             }
           }
@@ -48,9 +49,9 @@
     </header>
 <!-- Card Section -->
 <main>
-    <section class="flex">
-        <div class="basis-3/4 bg-primary p-5">
-            <div class="flex flex-col">
+    <section class="flex w-full">
+        <div class="basis-4/5 w-full bg-primary p-5 h-auto">
+            <div class="flex flex-col gap-5">
                 <div class="grid grid-cols-4 grid-rows-1 gap-4">
                     <div class="col-span-1 flex p-4 bg-secondary rounded-lg gap-3 font-medium items-center">
                         <img src="./assets/checkbox.png" alt="">
@@ -71,13 +72,101 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid">
-                    <p>ShopEase</p>
-                    <h2>Fix Mobile Button Issue</h2>
+                <div class="grid grid-cols-3 grid-rows-2 gap-4">
+                    <div class="bg-secondary pt-6">
+                        <div class="mb-4 pl-4">
+                            <span class="text-base bg-[#dddddd] rounded-lg p-2 text-center">ShopEase</span>
+                            <h2 class="text-2xl font-medium mb-4 mt-5">Fix Mobile Button Issue</h2>
+                            <p class="w-[90%] mx-auto text-base text-[#000000] p-2 bg-primary rounded-xl truncate">Debug using Chrome DevTools,<br> check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick wo</p>
+                        </div>
+                        <div class="flex justify-around border-t-2 border-dashed pt-2">
+                            <div>
+                                <p class="text-sm">Deadline</p>
+                                <h4 class="text-base font-medium">21 March 2025</h4>
+                            </div>
+                            <button class="bg-accent text-primary py-3 px-5 rounded-xl text-base font-medium">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-secondary pt-6 py-6">
+                        <div class="mb-4">
+                            <span class="text-base bg-[#dddddd] rounded-lg p-2 text-center">ShopEase</span>
+                            <h2 class="text-2xl font-medium mb-4 mt-5">Fix Mobile Button Issue</h2>
+                            <p class="w-[85%] mx-auto text-base text-[#000000] p-2 bg-primary rounded-xl truncate">Debug using Chrome DevTools,<br> check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick wo</p>
+                        </div>
+                        <div class="flex justify-around border-t-2 border-dashed pt-2">
+                            <div>
+                                <p>Deadline</p>
+                                <h4>21 March 2025</h4>
+                            </div>
+                            <button class="bg-accent text-primary py-3 px-5 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-secondary pt-6 py-6">
+                        <div class="mb-4 border-b-2 border-dotted">
+                            <span class="text-base bg-primary rounded-lg w-auto mb-4">ShopEase</span>
+                            <h2 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h2>
+                            <p class="h-12 text-base text-[#000000] p-2 bg-primary rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick wo</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <h4>21 March 2025</h4>
+                            </div>
+                            <button class="bg-accent text-primary py-3 px-5 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-secondary pt-6 py-6">
+                        <div class="mb-4 border-b-2 border-dotted">
+                            <span class="text-base bg-primary rounded-lg w-auto mb-4">ShopEase</span>
+                            <h2 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h2>
+                            <p class="h-12 text-base text-[#000000] p-2 bg-primary rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick wo</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <h4>21 March 2025</h4>
+                            </div>
+                            <button class="bg-accent text-primary py-3 px-5 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-secondary pt-6 py-6">
+                        <div class="mb-4 border-b-2 border-dotted">
+                            <span class="text-base bg-primary rounded-lg w-auto mb-4">ShopEase</span>
+                            <h2 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h2>
+                            <p class="h-12 text-base text-[#000000] p-2 bg-primary rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick wo</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <h4>21 March 2025</h4>
+                            </div>
+                            <button class="bg-accent text-primary py-3 px-5 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-secondary pt-6 py-6">
+                        <div class="mb-4 border-b-2 border-dotted">
+                            <span class="text-base bg-primary rounded-lg w-auto mb-4">ShopEase</span>
+                            <h2 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h2>
+                            <p class="h-12 text-base text-[#000000] p-2 bg-primary rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick wo</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <h4>21 March 2025</h4>
+                            </div>
+                            <button class="bg-accent text-primary py-3 px-5 rounded-xl">Completed</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="basis-1/4">
+        <div class="basis-1/5">
 
         </div>
     </section>
