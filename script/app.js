@@ -9,7 +9,15 @@ function createTaskHistory(btnTaskCompleted,taskTitle,parentDiv){
         count += 1
         alert("Board updated seccessfully")
 
-        
+        const assigned = getElementById("assigned").innerText
+        let convertedAssigned = parseInt(assigned)
+        convertedAssigned -= 1
+        getElementById("assigned").innerText = convertedAssigned
+
+        const totalTasks = getElementById("task-count").innerText
+        let convertedTotalTask = parseInt(totalTasks)
+        convertedTotalTask += 1
+        getElementById("task-count").innerText = convertedTotalTask
 
         const p = document.createElement("p")
         p.innerText = `You have completed the task ${taskTitle} at ${new Date().toLocaleTimeString()}`
@@ -80,3 +88,11 @@ createTaskHistory(btnTaskCompleted3,taskTitle3,taskHistory)
 createTaskHistory(btnTaskCompleted4,taskTitle4,taskHistory)
 createTaskHistory(btnTaskCompleted5,taskTitle5,taskHistory)
 createTaskHistory(btnTaskCompleted6,taskTitle6,taskHistory)
+
+// Clear History
+
+const resetHistory = getElementById("reset-history")
+
+resetHistory.addEventListener("click",function(e){
+    taskHistory.innerHTML = ""
+})

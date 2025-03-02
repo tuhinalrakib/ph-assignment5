@@ -39,7 +39,7 @@
             <div class="flex gap-3">
                 <div class="flex items-center bg-secondary gap-2 p-4 rounded-full">
                     <img src="./assets/checkbox.png" alt="">
-                    <h1 class="text-[#1e1e1e] text-3xl font-bold">23</h1>
+                    <h1 id="task-count" class="text-[#1e1e1e] text-3xl font-bold">23</h1>
                 </div>
                 <button id="btn-bg-change" class="bg-secondary p-4 rounded-full">
                     <img src="./assets/theme-btn.png" alt="">
@@ -57,7 +57,7 @@
                         <img src="./assets/checkbox.png" alt="">
                         <div>
                             <p class="text-base">Task Assigned</p>
-                            <h1 class="text-3xl font-bold">05</h1>
+                            <h1 class="text-3xl font-bold">0<span id="assigned">6</span> </h1>
                         </div>
                     </div>
                     <div class="col-span-2 bg-gradient-to-br from-[#3752FD] to-[#9BA8F8] flex items-center text-2xl gap-5 rounded-lg">
@@ -176,7 +176,7 @@
                 <img src="./assets/activity.png" alt="">
                 <h6>Activity Log</h6>
             </div>
-            <button class="bg-accent text-base text-primary font-medium py-3 px-5 rounded-lg mb-4">Clear History</button>
+            <button id="reset-history" class="bg-accent text-base text-primary font-medium py-3 px-5 rounded-lg mb-4">Clear History</button>
             <div id="task-history" class="px-3 mt-2">
 
             </div>
