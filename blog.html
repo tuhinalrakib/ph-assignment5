@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <!-- tailwind css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#ffffff',
+                secondary: '#F4F7FF',
+                accent: '#3752FD'
+              }
+            }
+          }
+        }
+      </script>
+    <style>
+        .poppins{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+<body class="poppins w-[90%] mx-auto bg-gray-100">
+    <header class="my-6 bg-primary p-5 rounded-3xl">
+        <nav class="flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="./assets/logo.png" alt="">
+                <h1 class="font-light text-3xl">Dev<span class="font-bold">Board</span> </h1>
+            </div>
+            <button id="btn-back" class="bg-accent px-3 py-5 text-2xl text-primary rounded-lg">
+                Back To Desk
+            </button>
+        </nav>
+    </header>
+    <main>
+        <!-- Question 1 -->
+        <div class="bg-primary p-3 mb-4 rounded-xl">
+            <h3 class="text-xl font-semibold mb-2 border-b-4 border-dashed">question-1:What are the different ways to select an element in the DOM</h3>
+            <p>There are several ways to select an element in the DOM, such as:
+                1.getElementByID, 2.getElementsByClassName, 3.getElementsByTagName, 4.querySelector, 5.querySelectorAll
+            </p>
+        </div>
+        <!-- Question 2 -->
+        <div class="bg-primary p-3 mb-2 rounded-xl">
+            <h3 class="text-xl font-semibold mb-2 border-b-4 border-dashed">question-2:What is the difference between innerHTML, innerText and textContent?</h3>
+            <p>innerHTML: its return different types of html tag, innerText: ite returns only visible innertext,textContent: it return all type text with hidden text
+            </p>
+        </div>
+        <!-- Question 3 -->
+        <div class="bg-primary p-3 mb-4 rounded-xl">
+            <h3 class="text-xl font-semibold mb-2 border-b-4 border-dashed">question-3:What is event delegation in the DOM?</h3>
+            <p>Event delegation is a technique in the DOM when i use events listens in parent element then it is child elements instead of attaching event listeners to each child individually.
+            </p>
+        </div>
+        <!-- Question 4 -->
+        <div class="bg-primary p-3 mb-4 rounded-xl">
+            <h3 class="text-xl font-semibold mb-2 border-b-4 border-dashed">question-4:What is event bubblings in the DOM?</h3>
+            <p>Event bubbling is a concept in the DOM when an event triggered parent elements then a child element propagates("bubbles up")in. The event first runs on the child, then bubbles up to the parent.</p>
+        </div>
+        <!-- Question 5 -->
+        <div class="bg-primary p-3 mb-4 rounded-xl">
+            <h3 class="text-xl font-semibold mb-2 border-b-4 border-dashed">question-5:How to create, add and remove element using JavaScript?</h3>
+            <p>for create Element we can use document.createElement("tagName"). for add an element we can use 1.document.parent.appendChild(element) 2.document.parent.append(element). for remove we can use parent.removeChild(element)</p>
+        </div>
+    </main>
+
+    <script src="./script/blog.js"></script>
+</body>
+</html>

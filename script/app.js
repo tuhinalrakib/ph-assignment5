@@ -31,7 +31,7 @@ function createTaskHistory(btnTaskCompleted,taskTitle,parentDiv){
         e.target.disabled = true
         e.target.style.backgroundColor = 'rgba(55, 82, 253, .2)'
         if(count === 6){
-            alert("You completed all task")
+            alert("Congrats!!! You have completed all the current task")
         }
 })
 }
@@ -95,4 +95,11 @@ const resetHistory = getElementById("reset-history")
 
 resetHistory.addEventListener("click",function(e){
     taskHistory.innerHTML = ""
+})
+
+// Blog Site
+const blogSite = getElementById("blog-site")
+
+blogSite.addEventListener("click",function(e){
+    window.location.href = './blog.html'
 })
