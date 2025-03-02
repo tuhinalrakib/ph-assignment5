@@ -1,4 +1,4 @@
-function getElementById(id){
-    const element = document.getElementById(id)
-    return element
-}
+// function getElementById(id){
+//     const element = document.getElementById(id)
+//     return element
+// }
